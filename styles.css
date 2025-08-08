@@ -250,7 +250,7 @@ header {
 
 header img {
   height: 48px;
-  width: auto;
+  width: 276px;
   filter: invert(1);
   transition: filter 0.3s ease;
 }
