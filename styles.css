@@ -1,0 +1,470 @@
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+       url('../fonts/Satoshi-Light.woff') format('woff'),
+       url('../fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-LightItalic';
+  src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+       url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../fonts/Satoshi-Regular.woff') format('woff'),
+       url('../fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+       url('../fonts/Satoshi-Italic.woff') format('woff'),
+       url('../fonts/Satoshi-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('../fonts/Satoshi-Medium.woff') format('woff'),
+       url('../fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-MediumItalic';
+  src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+       url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('../fonts/Satoshi-Bold.woff') format('woff'),
+       url('../fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BoldItalic';
+  src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+       url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+       url('../fonts/Satoshi-Black.woff') format('woff'),
+       url('../fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BlackItalic';
+  src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+       url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('../fonts/Satoshi-Variable.woff') format('woff'),
+       url('../fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
+       url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Boska-Extralight';
+  src: url('../fonts/Boska-Extralight.woff2') format('woff2'),
+       url('../fonts/Boska-Extralight.woff') format('woff'),
+       url('../fonts/Boska-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-ExtralightItalic';
+  src: url('../fonts/Boska-ExtralightItalic.woff2') format('woff2'),
+       url('../fonts/Boska-ExtralightItalic.woff') format('woff'),
+       url('../fonts/Boska-ExtralightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Light';
+  src: url('../fonts/Boska-Light.woff2') format('woff2'),
+       url('../fonts/Boska-Light.woff') format('woff'),
+       url('../fonts/Boska-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-LightItalic';
+  src: url('../fonts/Boska-LightItalic.woff2') format('woff2'),
+       url('../fonts/Boska-LightItalic.woff') format('woff'),
+       url('../fonts/Boska-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Regular';
+  src: url('../fonts/Boska-Regular.woff2') format('woff2'),
+       url('../fonts/Boska-Regular.woff') format('woff'),
+       url('../fonts/Boska-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-Italic';
+  src: url('../fonts/Boska-Italic.woff2') format('woff2'),
+       url('../fonts/Boska-Italic.woff') format('woff'),
+       url('../fonts/Boska-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Medium';
+  src: url('../fonts/Boska-Medium.woff2') format('woff2'),
+       url('../fonts/Boska-Medium.woff') format('woff'),
+       url('../fonts/Boska-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-MediumItalic';
+  src: url('../fonts/Boska-MediumItalic.woff2') format('woff2'),
+       url('../fonts/Boska-MediumItalic.woff') format('woff'),
+       url('../fonts/Boska-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Bold';
+  src: url('../fonts/Boska-Bold.woff2') format('woff2'),
+       url('../fonts/Boska-Bold.woff') format('woff'),
+       url('../fonts/Boska-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-BoldItalic';
+  src: url('../fonts/Boska-BoldItalic.woff2') format('woff2'),
+       url('../fonts/Boska-BoldItalic.woff') format('woff'),
+       url('../fonts/Boska-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Black';
+  src: url('../fonts/Boska-Black.woff2') format('woff2'),
+       url('../fonts/Boska-Black.woff') format('woff'),
+       url('../fonts/Boska-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-BlackItalic';
+  src: url('../fonts/Boska-BlackItalic.woff2') format('woff2'),
+       url('../fonts/Boska-BlackItalic.woff') format('woff'),
+       url('../fonts/Boska-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Satoshi-Regular', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+  color: #fcfcfc;
+}
+
+header img {
+  height: 48px;
+  width: auto;
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
+
+header.scrolled img {
+  filter: invert(0);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+.header-menu{
+  display: flex;
+  gap: 40px;
+}
+
+.header-menu a{
+  text-decoration: none;
+  color: #fcfcfc;
+  font-weight: 300;
+  font-size: 20px;
+  transition: color 0.6s ease, transform 0.6s ease;
+}
+.header-menu a:hover {
+  color: #ff6600;
+  transform: scale(1.05);
+}
+
+.header-menu a.active {
+  font-weight: bold;
+}
+
+.home-video{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+header.scrolled {
+  background: #fcfcfc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled .header-menu a {
+  color: #070707;
+  font-weight: 300;
+  font-size: 20px;
+  transition: color 0.6s ease, transform 0.6s ease;
+}
+
+header.scrolled .header-menu a.active {
+  font-weight: bold;
+}
+
+header.scrolled .header-menu a:hover {
+  color: #ff6600;
+  transform: scale(1.05);
+}
+
+.image-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.home-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.intro { padding: 40px 0; }
+
+
+.hero {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero .home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-blur{
+  position:absolute; inset:0; z-index:1;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  background: rgba(0,0,0,0);
+  transition: backdrop-filter .2s linear, -webkit-backdrop-filter .2s linear, background .2s linear;
+  pointer-events:none;
+  will-change: backdrop-filter, background;
+}
+
+.hero > .overlay{
+  position:absolute; inset:0; z-index:2;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  color:#fff;
+  opacity:0;                     /* start fully transparent */
+  transform: translateY(28px);   /* start lower */
+  transition: opacity .4s ease, transform .4s ease;
+  will-change: opacity, transform;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;                   /* above blur */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #fff;
+  opacity: 0;                   /* start hidden */
+  transform: translateY(24px);  /* small down shift */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hero-title{
+  z-index: 2;
+  display: flex; align-items: flex-end; /* top-left headline */
+    justify-content: center; /* center horizontally */
+  color: #FAFBEF;
+  font: 700 clamp(24px, 4vw, 56px)/1.1 "Satoshi-Regular", serif;
+}
+
+.hero .overlay h1{
+  margin: 0 0 14px;
+  font-size: clamp(28px, 7vw, 72px);
+  line-height: 1.05;
+}
+.hero .overlay .cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.hero .overlay .cta-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #fff;
+}
+
+/* the pinned hero image layer */
+.pinned-hero{
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 0;               /* stays behind everything */
+  overflow: hidden;
+  isolation: isolate;
+}
+.pinned-hero .hero-img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.pinned-hero .hero-blur{
+  position: absolute; inset: 0;
+  pointer-events: none;
+  /* optional: a bit of dark to help readability */
+  background: rgba(0,0,0,.20);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+/* everything that should scroll OVER the pinned hero */
+.over-hero{
+  position: relative;
+  z-index: 2;                /* above the hero */
+  color: #fff;
+}
+
+/* the title slab that sits centered and tall */
+.hero-title-slab{
+  min-height: 100vh;         /* fills one screen so it overlays nicely */
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.hero-title-slab .wrap{
+  max-width: 1200px;
+  padding: 0 24px;
+}
+.hero-title-slab h1{
+  margin: 0 0 16px;
+  font: 700 clamp(32px, 8vw, 84px)/1.05 "Satoshi-Regular", sans-serif;
+}
+.hero-title-slab .cta-button{
+  display: inline-block;
+  padding: .8rem 1.4rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,.6);
+  background: rgba(255,255,255,.12);
+  color: #fff; text-decoration: none;
+}
+
+.hero-title-slab { opacity: 0; transform: translateY(18px); transition: .6s ease; }
+.hero-title-slab.is-in { opacity: 1; transform: translateY(0); }
