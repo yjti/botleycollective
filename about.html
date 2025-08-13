@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botley Collective</title>
+  <link rel="stylesheet" href="styles.css" media="screen" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <!-- libs first -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stackblur-canvas/2.2.0/stackblur.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  $(function () {
+    const $img   = $('.hero-img');
+    const canvas = document.getElementById('blur');
+
+    $img.on('load', function () {
+      // draw + blur
+      canvas.width  = this.naturalWidth;
+      canvas.height = this.naturalHeight;
+      StackBlur.image(this, canvas, 90, false); // blurred version on the canvas
+
+      // keep the canvas visually responsive (CSS handles width/height)
+      fitCanvas();
+      $(window).on('resize', fitCanvas);
+
+      // initialize scroll state once image is ready
+      updateBlur();
+      window.addEventListener('scroll', updateBlur, { passive: true });
+    });
+
+    // if the image is cached
+    if ($img[0].complete) $img.trigger('load');
+
+    function fitCanvas() {
+      // only layout size; pixel size already set above
+      $('#blur').css({ width: '100%', height: 'auto' });
+    }
+
+    function updateBlur() {
+      const hero  = document.querySelector('.pinned-hero');
+      const start = hero.offsetTop;                                  // where the hero begins
+      const span  = Math.min(window.innerHeight, hero.clientHeight) * 0.7; // fade distance
+      const y     = window.scrollY - start;
+      const t     = Math.max(0, Math.min(y / span, 1));              // clamp 0..1
+      canvas.style.opacity = t.toFixed(3);                           // 0 → 1 as you scroll
+    }
+  });
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="BC.svg" alt="BC Logo" />
+      <div class="header-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html" class ="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        </div>
+    </div>
+  </header>
+  <section class="pinned-hero" aria-hidden="true">
+    <img src="images/about_bg_v2.png" alt="" class="hero-img" />
+    <div class = "blur-container">
+    <canvas id="blur"></canvas>
+    </div>
+  </section>
+  <section>
+    <div class="body-1">
+      <h1 class="title">About the collective</h1>
+  </section>
+  <div class="row">
+    <div class="col">
+      
+  </div>
+  </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <img src="BC.svg" alt="BC Logo" style="filter:invert()"/>
+      <p class="footer-copyright">&copy; 2025 Botley Collective. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <script>
+        const slab = document.querySelector('.hero-title-slab');
+        const io = new IntersectionObserver(([e])=>{
+        if (e.isIntersecting) slab.classList.add('is-in');
+        },{threshold:.2});
+        io.observe(slab);
+    </script>
+    <script>
+      (() => {
+        const header = document.querySelector('header');
+        const hero   = document.querySelector('.pinned-hero');
+
+        // Delay before turning white (include header height if you want it to wait
+        // until the header has fully passed the bottom of the hero)
+        const OFFSET_PX = 10 + header.offsetHeight;
+
+        const io = new IntersectionObserver(
+          ([entry]) => {
+            // While the hero (minus the offset) is visible => keep transparent
+            // Once it scrolls out => add 'scrolled' (turn white)
+            header.classList.toggle('scrolled', !entry.isIntersecting);
+          },
+          {
+            threshold: 0,
+            // Shrink the viewport’s top edge by OFFSET_PX to delay the switch
+            rootMargin: `-${OFFSET_PX}px 0px 0px 0px`
+          }
+        );
+
+        io.observe(hero);
+      })();
+      </script>
+
+
+</body>
+</html>
